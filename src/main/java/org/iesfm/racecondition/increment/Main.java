@@ -1,4 +1,4 @@
-package org.iesfm.racecondition;
+package org.iesfm.racecondition.increment;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

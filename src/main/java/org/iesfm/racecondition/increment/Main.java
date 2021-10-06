@@ -16,8 +16,7 @@ public class Main {
 
         List<Thread> threads = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
-            IncrementTask incrementTask = new IncrementTask(accumulator, 10000000);
-            Thread thread = new Thread(incrementTask);
+            Thread thread = new Thread(new IncrementTask(accumulator, 10000000));
             thread.start();
             threads.add(thread);
         }
